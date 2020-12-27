@@ -1,0 +1,266 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arm20jtag
+LIBS:ARM20toTI20-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ARM20JTAG C1
+U 1 1 5ED0E05D
+P 7025 3525
+F 0 "C1" H 7075 4175 60  0000 C CNN
+F 1 "ARM20JTAG" H 7025 2975 60  0000 C CNN
+F 2 "Connectors_Multicomp:Multicomp_MC9A12-2034_2x10x2.54mm_Straight" H 6875 3575 60  0001 C CNN
+F 3 "" H 6875 3575 60  0001 C CNN
+	1    7025 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L TI20JTAG C2
+U 1 1 5ED0E5E5
+P 4575 3500
+F 0 "C2" H 4625 4150 60  0000 C CNN
+F 1 "TI20JTAG" H 4575 2950 60  0000 C CNN
+F 2 "footprints:CLP-110-02-F-D-K" H 4425 3550 60  0001 C CNN
+F 3 "" H 4425 3550 60  0001 C CNN
+	1    4575 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR01
+U 1 1 5ED0E830
+P 6475 2700
+F 0 "#PWR01" H 6475 2550 50  0001 C CNN
+F 1 "VDD" H 6475 2850 50  0000 C CNN
+F 2 "" H 6475 2700 50  0001 C CNN
+F 3 "" H 6475 2700 50  0001 C CNN
+	1    6475 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5ED0E8E7
+P 7875 3975
+F 0 "#PWR02" H 7875 3725 50  0001 C CNN
+F 1 "GND" H 7875 3825 50  0000 C CNN
+F 2 "" H 7875 3975 50  0001 C CNN
+F 3 "" H 7875 3975 50  0001 C CNN
+	1    7875 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4025 3200 3825 3200
+Wire Wire Line
+	3825 3200 3825 2800
+Wire Wire Line
+	3525 2800 6475 2800
+Wire Wire Line
+	6475 2700 6475 3025
+Connection ~ 6475 2800
+Wire Wire Line
+	7625 3125 7875 3125
+Wire Wire Line
+	7875 3125 7875 3975
+Wire Wire Line
+	7625 3225 7875 3225
+Connection ~ 7875 3225
+Wire Wire Line
+	7625 3325 7875 3325
+Connection ~ 7875 3325
+Wire Wire Line
+	7625 3425 7875 3425
+Connection ~ 7875 3425
+Wire Wire Line
+	7625 3525 7875 3525
+Connection ~ 7875 3525
+Wire Wire Line
+	7625 3625 7875 3625
+Connection ~ 7875 3625
+Wire Wire Line
+	7625 3725 7875 3725
+Connection ~ 7875 3725
+Wire Wire Line
+	7625 3825 7875 3825
+Connection ~ 7875 3825
+Wire Wire Line
+	7625 3925 7875 3925
+Connection ~ 7875 3925
+$Comp
+L GND #PWR03
+U 1 1 5ED0EA81
+P 5350 3950
+F 0 "#PWR03" H 5350 3700 50  0001 C CNN
+F 1 "GND" H 5350 3800 50  0000 C CNN
+F 2 "" H 5350 3950 50  0001 C CNN
+F 3 "" H 5350 3950 50  0001 C CNN
+	1    5350 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3900 5175 3900
+Wire Wire Line
+	5350 3100 5350 3950
+Wire Wire Line
+	5175 3700 5350 3700
+Connection ~ 5350 3900
+Wire Wire Line
+	5175 3500 5350 3500
+Connection ~ 5350 3700
+Wire Wire Line
+	5175 3400 5350 3400
+Connection ~ 5350 3500
+Wire Wire Line
+	5175 3300 5350 3300
+Connection ~ 5350 3400
+NoConn ~ 5175 3200
+NoConn ~ 4025 3800
+NoConn ~ 4025 3900
+NoConn ~ 5175 3800
+Wire Wire Line
+	4025 3700 3900 3700
+Wire Wire Line
+	3900 3700 3900 4150
+Wire Wire Line
+	3900 4150 5900 4150
+Wire Wire Line
+	5900 4150 5900 3725
+Wire Wire Line
+	5900 3725 6475 3725
+Wire Wire Line
+	4025 3500 3850 3500
+Wire Wire Line
+	3850 3500 3850 4200
+Wire Wire Line
+	3850 4200 5950 4200
+Wire Wire Line
+	5950 4200 5950 3425
+Wire Wire Line
+	5950 3425 6475 3425
+Wire Wire Line
+	4025 3400 3800 3400
+Wire Wire Line
+	3800 3400 3800 4250
+Wire Wire Line
+	3800 4250 6000 4250
+Wire Wire Line
+	6000 4250 6000 3525
+Wire Wire Line
+	6000 3525 6475 3525
+Wire Wire Line
+	6475 3625 6050 3625
+Wire Wire Line
+	6050 3625 6050 4300
+Wire Wire Line
+	6050 4300 3750 4300
+Wire Wire Line
+	3750 4300 3750 3300
+Wire Wire Line
+	3750 3300 4025 3300
+Wire Wire Line
+	4025 3100 3700 3100
+Wire Wire Line
+	3700 3100 3700 4350
+Wire Wire Line
+	3700 4350 6100 4350
+Wire Wire Line
+	6100 4350 6100 3225
+Wire Wire Line
+	6100 3225 6475 3225
+Wire Wire Line
+	4025 3000 3650 3000
+Wire Wire Line
+	3650 3000 3650 4400
+Wire Wire Line
+	3650 4400 6150 4400
+Wire Wire Line
+	6150 4400 6150 3325
+Wire Wire Line
+	6150 3325 6475 3325
+Wire Wire Line
+	6475 3125 6100 3125
+Wire Wire Line
+	6100 3125 6100 3000
+Wire Wire Line
+	6100 3000 5175 3000
+Wire Wire Line
+	5175 3100 5350 3100
+Connection ~ 5350 3300
+NoConn ~ 7625 3025
+NoConn ~ 6475 3825
+NoConn ~ 6475 3925
+$Comp
+L R EMU0
+U 1 1 6023E240
+P 3525 3450
+F 0 "EMU0" V 3605 3450 50  0000 C CNN
+F 1 "-" V 3525 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_2010_HandSoldering" V 3455 3450 50  0001 C CNN
+F 3 "" H 3525 3450 50  0001 C CNN
+	1    3525 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R EMU1
+U 1 1 6023E3DA
+P 5500 3450
+F 0 "EMU1" V 5580 3450 50  0000 C CNN
+F 1 "-" V 5500 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_2010_HandSoldering" V 5430 3450 50  0001 C CNN
+F 3 "" H 5500 3450 50  0001 C CNN
+	1    5500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4025 3600 3525 3600
+Wire Wire Line
+	3525 3300 3525 2800
+Connection ~ 3825 2800
+Wire Wire Line
+	5500 3300 5500 2800
+Connection ~ 5500 2800
+Wire Wire Line
+	5500 3600 5175 3600
+$EndSCHEMATC
